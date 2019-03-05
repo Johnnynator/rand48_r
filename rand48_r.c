@@ -1,7 +1,5 @@
-#include <stdlib.h>
 #include <inttypes.h>
 #include <string.h>
-#include <stdint.h>
 
 #include "rand48_r.h"
 
