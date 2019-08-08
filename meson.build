@@ -1,5 +1,5 @@
 project('rand48_r', 'c',
-  version : '0.1',
+  version : '0.2',
   default_options : ['warning_level=3'])
 
 shlib = both_libraries('rand48_r', ['rand48_r.c'],
@@ -17,8 +17,8 @@ pkg_mod = import('pkgconfig')
 pkg_mod.generate(
   name : 'rand48_r',
   filebase : 'rand48_r',
-  description : 'Meson sample project.',
+  description : 'drand48_r(3) implementation',
   subdirs : 'rand48_r',
   libraries : shlib,
-  version : '0.1',
+  version : meson.project_version(),
 )
